@@ -4,24 +4,16 @@ import javax.persistence.*;
 import javax.xml.bind.annotation.*;
 
 @Entity
-@XmlRootElement
-@XmlAccessorType(value = XmlAccessType.FIELD)
 public class Equipment {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@XmlAttribute
 	private int id;
-	@XmlAttribute
 	private String name;
-	@XmlAttribute
 	private String brand;
-	@XmlAttribute
 	private String description;
-	@XmlAttribute
-	private int price;
+	private float price;
 	@ManyToOne
 	@JoinColumn(name="towerId")
-	@XmlTransient
 	private Tower tower;
 	public int getId() {
 		return id;
@@ -47,10 +39,10 @@ public class Equipment {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public int getPrice() {
+	public float getPrice() {
 		return price;
 	}
-	public void setPrice(int price) {
+	public void setPrice(float price) {
 		this.price = price;
 	}
 	public Tower getTower() {

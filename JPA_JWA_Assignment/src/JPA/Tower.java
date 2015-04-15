@@ -6,25 +6,18 @@ import javax.persistence.*;
 import javax.xml.bind.annotation.*;
 
 @Entity
-@XmlRootElement
-@XmlAccessorType(value = XmlAccessType.FIELD)
+
 public class Tower {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@XmlAttribute
-	private int id;
-	@XmlAttribute
+	private int id;	
 	private String name;
-	@XmlAttribute
-	private int height;
-	@XmlAttribute
+	private float height;	
 	private int sides;
-	@OneToMany(mappedBy="tower", cascade=CascadeType.ALL, orphanRemoval=true)
-	@XmlElement(name="equipment")
+	@OneToMany(mappedBy="tower", cascade=CascadeType.ALL, orphanRemoval=true)	
 	private List<Equipment> equipments;
 	@ManyToOne
-	@JoinColumn(name="siteId")
-	@XmlTransient
+	@JoinColumn(name="siteId")	
 	private Site site;
 	public int getId() {
 		return id;
@@ -38,10 +31,10 @@ public class Tower {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public int getHeight() {
+	public float getHeight() {
 		return height;
 	}
-	public void setHeight(int height) {
+	public void setHeight(float height) {
 		this.height = height;
 	}
 	public int getSides() {

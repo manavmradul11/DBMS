@@ -4,10 +4,7 @@ import java.util.List;
 
 import javax.xml.bind.annotation.*;
 
-@XmlRootElement
-@XmlAccessorType(value = XmlAccessType.FIELD)
 public class Sites {
-	@XmlElement(name="site")
 	private List<Site> sites;
 
 	public List<Site> getSites() {

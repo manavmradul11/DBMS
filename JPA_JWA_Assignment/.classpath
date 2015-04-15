@@ -14,5 +14,26 @@
 			<attribute name="owner.project.facets" value="jpt.jpa"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/manumradul11/Desktop/jersy jackson/asm-3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/manumradul11/Desktop/jersy jackson/jackson-core-asl-1.9.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/manumradul11/Desktop/jersy jackson/jackson-jaxrs-1.9.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/manumradul11/Desktop/jersy jackson/jackson-mapper-asl-1.9.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/manumradul11/Desktop/jersy jackson/jackson-xc-1.9.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/manumradul11/Desktop/jersy jackson/jersey-apache-client-1.18.jar"/>
+	<classpathentry kind="lib" path="C:/Users/manumradul11/Desktop/jersy jackson/jersey-atom-abdera-1.18.jar"/>
+	<classpathentry kind="lib" path="C:/Users/manumradul11/Desktop/jersy jackson/jersey-client-1.18.jar"/>
+	<classpathentry kind="lib" path="C:/Users/manumradul11/Desktop/jersy jackson/jersey-core-1.18.jar"/>
+	<classpathentry kind="lib" path="C:/Users/manumradul11/Desktop/jersy jackson/jersey-guice-1.18.jar"/>
+	<classpathentry kind="lib" path="C:/Users/manumradul11/Desktop/jersy jackson/jersey-json-1.18.jar"/>
+	<classpathentry kind="lib" path="C:/Users/manumradul11/Desktop/jersy jackson/jersey-multipart-1.18.jar"/>
+	<classpathentry kind="lib" path="C:/Users/manumradul11/Desktop/jersy jackson/jersey-server-1.18.jar"/>
+	<classpathentry kind="lib" path="C:/Users/manumradul11/Desktop/jersy jackson/jersey-servlet-1.18.jar"/>
+	<classpathentry kind="lib" path="C:/Users/manumradul11/Desktop/jersy jackson/jersey-spring-1.18.jar"/>
+	<classpathentry kind="lib" path="C:/Users/manumradul11/Desktop/jersy jackson/jettison-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/manumradul11/Desktop/jersy jackson/jsr311-api-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/manumradul11/Desktop/jersy jackson/mysql-connector-java-5.1.29-bin.jar"/>
+	<classpathentry kind="lib" path="C:/Users/manumradul11/Desktop/jersy jackson/oauth-client-1.18.jar"/>
+	<classpathentry kind="lib" path="C:/Users/manumradul11/Desktop/jersy jackson/oauth-server-1.18.jar"/>
+	<classpathentry kind="lib" path="C:/Users/manumradul11/Desktop/jersy jackson/oauth-signature-1.18.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

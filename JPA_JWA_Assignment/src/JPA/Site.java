@@ -8,21 +8,15 @@ import javax.xml.bind.annotation.*;
 @NamedQueries(value = { @NamedQuery(
 		name = "findAllSites",
 		query = "select sit from Site sit") })
-@XmlRootElement
-@XmlAccessorType(value = XmlAccessType.FIELD)
+
 public class Site {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@XmlAttribute
 	private int id;
-	@XmlAttribute
 	private String name;
-	@XmlAttribute
-	private String latitude;
-	@XmlAttribute
-	private String longitude;
+	private float latitude;
+	private float longitude;
 	@OneToMany(mappedBy="site", cascade=CascadeType.ALL, orphanRemoval=true)
-	@XmlElement(name="tower")
 	private List<Tower> towers;
 	public int getId() {
 		return id;
@@ -36,16 +30,16 @@ public class Site {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getLatitude() {
+	public float getLatitude() {
 		return latitude;
 	}
-	public void setLatitude(String latitude) {
+	public void setLatitude(float latitude) {
 		this.latitude = latitude;
 	}
-	public String getLongitude() {
+	public float getLongitude() {
 		return longitude;
 	}
-	public void setLongitude(String longitude) {
+	public void setLongitude(float longitude) {
 		this.longitude = longitude;
 	}
 	public List<Tower> getTowers() {
